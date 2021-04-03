@@ -22,7 +22,8 @@
       align-items: center;
       font-size: 22px;
       font-weight: bold;
-      border: 4px solid #2c3e50; }
+      border: 4px solid #2c3e50;
+      cursor: pointer; }
     .game__container .grid .winner {
       background: yellow;
       color: #000; }
