@@ -4,8 +4,11 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  width: 30vw;
-  height: 30vw; }
+  width: 50vw;
+  height: 40vw; }
+  .game__container h3 {
+    color: #3A98D4;
+    margin-bottom: 12px; }
   .game__container .grid {
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(3, 1fr);
@@ -35,14 +38,15 @@
     border-style: solid;
     text-transform: capitalize;
     background-color: #77A3EB;
-    margin-top: 8px; }
+    margin-top: 8px;
+    min-height: 40px; }
     .game__container .button:hover {
       color: #fff;
       opacity: 0.9;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24); }
     .game__container .button:disabled {
       opacity: 0.5;
-      cursor: not-allowed; }
+      pointer-events: none; }
   .game__container .disable {
     opacity: 0.5;
     pointer-events: none; }

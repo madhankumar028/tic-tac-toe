@@ -4,8 +4,12 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  width: 30vw;
-  height: 30vw;
+  width: 50vw;
+  height: 40vw;
+  h3 {
+    color: #3A98D4;
+    margin-bottom: 12px;
+  }
   .grid {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
@@ -39,6 +43,7 @@
     text-transform: capitalize;
     background-color: #77A3EB;
     margin-top: 8px;
+    min-height: 40px;
     &:hover {
       color: #fff;
       opacity: 0.9;
@@ -46,7 +51,7 @@
     }
     &:disabled {
       opacity: 0.5;
-      cursor: not-allowed;
+      pointer-events: none;
     }
   }
   .disable {
