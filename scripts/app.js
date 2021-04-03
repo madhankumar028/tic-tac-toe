@@ -68,6 +68,7 @@ const tic_tac_toe = {
   setGameOver() {
     this.gameOver = true;
     this.containerElement.classList.toggle('disable');
+    document.querySelector('#restart').removeAttribute('disabled');
   },
 
   isGameOver() {
@@ -81,6 +82,7 @@ const tic_tac_toe = {
   },
 
   restart() {
+    document.querySelector('#restart').setAttribute('disabled', true);
     if (this.isGameOver() || this.gameOver) {
       this.start();
       this.containerElement.classList.toggle('disable');
