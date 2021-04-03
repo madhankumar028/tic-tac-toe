@@ -1,0 +1,30 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Kill your boredom game",
+  "main": "index.js",
+  "author": "madhankumar <https://madhankumar028.dev>",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "concurrently -k \"npm run dev\" \"npm run watch-css\"",
+    "dev": "lite-server",
+    "build-css": "node-sass --include-path scss styles/app.scss styles/app.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhankumar028/tic-tac-toe.git"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madhankumar028/tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/madhankumar028/tic-tac-toe#readme"
+}
